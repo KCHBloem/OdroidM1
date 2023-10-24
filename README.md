@@ -25,6 +25,7 @@ Then install the following dependencies:
 - WiringPi: `sudo python3 -m pip install odroid-wiringpi` and `sudo apt install odroid-wiringpi`
 
 ### Code Example Wiring Pi
+Use `sudo gpio readall` to see pinout
 ```python
 #!/usr/bin/env python
  
