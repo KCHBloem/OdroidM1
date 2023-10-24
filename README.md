@@ -22,7 +22,7 @@ Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`
 Then install the following dependencies:
 - Firefox: `sudo snap install firefox`
-- WiringPi: `sudo python3 -m pip install odroid-wiringpi`
+- WiringPi: `sudo python3 -m pip install odroid-wiringpi` and `sudo apt install odroid-wiringpi`
 
 ### Code Example Wiring Pi
 ```python
