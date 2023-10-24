@@ -4,9 +4,13 @@ The repository will also contain the python code necessary to read the sensor da
 
 ### Operating System:
 Version: `Ubuntu 22.04.01 Desktop`
+
 Username: `odroid`
+
 Password: `odroid`
-IP: _Can be found under network settings on the device_
+
+IP: _Can be found under network settings on the device._
+
 Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 1. Flash the image onto an SD card using something like [Balena Etcher](https://etcher.balena.io)
 2. Insert the SD card into the SD card slot on the M1 and power on the device
