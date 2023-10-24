@@ -41,3 +41,40 @@ while True:
     wpi.digitalWrite(0, 0)
     time.sleep(1)
 ```
+
+
+### SPI Installation (might not be required)
+Open config.ini in the boot directory using: `sudo nano /boot/config.ini`
+
+It should look something like this:
+```
+[generic]
+overlay_resize=16384
+overlay_profile=
+overlays="i2c0 i2c1 spi0"
+
+[overlay_custom]
+overlays="i2c0 i2c1"
+
+[overlay_hktft32]
+overlays="hktft32 ads7846"
+```
+
+Edit it to look like this (add the last part):
+```
+[generic]
+overlay_resize=16384
+overlay_profile=
+overlays="i2c0 i2c1 spi0"
+
+[overlay_custom]
+overlays="i2c0 i2c1"
+
+[overlay_hktft32]
+overlays="hktft32 ads7846"
+
+[overlay_spi]
+overlays="spi0"
+```
+Then run `ls -al /dev/spi*` to see if spidev0.0 shows up.
+
