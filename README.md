@@ -6,11 +6,13 @@ The repository will also contain the python code necessary to read the sensor da
 Version: `Ubuntu 22.04.01 Desktop`
 Username: `odroid`
 Password: `odroid`
-
+IP: _Can be found under network settings on the device_
 Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 1. Flash the image onto an SD card using something like [Balena Etcher](https://etcher.balena.io)
 2. Insert the SD card into the SD card slot on the M1 and power on the device
 3. On boot you should first enter the petitboot OS, from here you can select the disk that ubuntu is installed on and boot from there
+
+
 
 ### Required Packages and Software (Internet Connection Required)
 Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`
