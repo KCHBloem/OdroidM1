@@ -13,7 +13,24 @@ Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 3. On boot you should first enter the petitboot OS, from here you can select the disk that ubuntu is installed on and boot from there
 
 ### Required Packages and Software (Internet Connection Required)
-
+Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`
+Then install the following dependencies:
 - Firefox: `sudo snap install firefox`
-- WiringPi: ``
+- WiringPi: `sudo python3 -m pip install odroid-wiringpi`
 
+### Code Example Wiring Pi
+```python
+#!/usr/bin/env python
+ 
+import odroid_wiringpi as wpi
+import time
+ 
+wpi.wiringPiSetup()
+wpi.pinMode(0, 1)
+ 
+while True:
+    wpi.digitalWrite(0, 1)
+    time.sleep(1)
+    wpi.digitalWrite(0, 0)
+    time.sleep(1)
+```
