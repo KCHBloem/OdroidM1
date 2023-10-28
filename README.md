@@ -19,7 +19,7 @@ Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 
 
 ### Required Packages and Software (Internet Connection Required)
-Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`
+Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`. If you get an error about not being able to connect to the ubuntu servers try to create a static ip address and changing the DNS server.
 Then install the following dependencies:
 - Firefox: `sudo snap install firefox`
 - WiringPi: `sudo python3 -m pip install odroid-wiringpi` and `sudo apt install odroid-wiringpi`
