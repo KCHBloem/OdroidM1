@@ -28,7 +28,7 @@ Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 Start of by running: `sudo apt update` and `sudo apt install python3 python3-pip`. If you get an error about not being able to connect to the ubuntu servers try to create a static ip address and changing the DNS server.
 Then install the following dependencies:
 - Webbrowser: `sudo snap install firefox` (Ubuntu) or `sudo apt-get install chromium` (Debian)
-- WiringPi: `sudo python3 -m pip install odroid-wiringpi` (Unbuntu) or `sudo apt install odroid-wiringpi` (Debian)
+- WiringPi: `sudo python3 -m pip install odroid-wiringpi` (also use `sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old` on Debian if you get an error) and `sudo apt install odroid-wiringpi` (Both)
 - Spidev: `sudo python3 -m pip install spidev` (Unbuntu) or `sudo apt-get install python3-spidev` (Debian)
 
 ### Code Example Wiring Pi
