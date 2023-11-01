@@ -3,7 +3,7 @@ This Repository will contain the instructions for installing the operating syste
 The repository will also contain the python code necessary to read the sensor data from the lager testbank and it will contain the react web dashboard project.
 
 ### Operating System:
-Version: `Ubuntu 22.04.01 Desktop`
+Version: `Ubuntu 22.04.01 Desktop` or `Debian 12 (Bookworm)`
 
 Username: `odroid`
 
@@ -11,11 +11,17 @@ Password: `odroid`
 
 IP: _Can be found under network settings on the device._
 
+#### Ubuntu:
 Image: [Github Page](https://github.com/TheRemote/Legendary-ODROID-M1)
 1. Flash the image onto an SD card using something like [Balena Etcher](https://etcher.balena.io)
 2. Insert the SD card into the SD card slot on the M1 and power on the device
 3. On boot you should first enter the petitboot OS, from here you can select the disk that ubuntu is installed on and boot from there
 
+#### Debian: 
+1. Boot the Odroid M1 and navigate to "Exit to shell"
+2. Enter: `uhdcpc`
+3. Enter: `exit`
+4. Select Debian 12 at the top and follow the installation
 
 
 ### Required Packages and Software (Internet Connection Required)
