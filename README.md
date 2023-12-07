@@ -50,7 +50,7 @@ while True:
 ```
 
 
-### SPI Installation (might not be required)
+### SPI / PWM Installation (might not be required)
 Open config.ini in the boot directory using: `sudo nano /boot/config.ini`
 
 It should look something like this:
@@ -82,6 +82,9 @@ overlays="hktft32 ads7846"
 
 [overlay_spi]
 overlays="spi0"
+
+[overlay_pwm]
+overlays="pwm_cd pwm_ef"
 ```
 Then run `ls -al /dev/spi*` to see if spidev0.0 shows up. [More Info](https://wiki.odroid.com/common/application_note/gpio/enable_spi_i2c_uart_with_dtbo#tab__odroid-m11) [Even More Info](https://wiki.odroid.com/odroid-m1/application_note/gpio/spi#tab__odroid-m12)
 
