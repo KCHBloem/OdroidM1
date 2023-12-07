@@ -72,7 +72,7 @@ Edit it to look like this (add the last part):
 [generic]
 overlay_resize=16384
 overlay_profile=
-overlays="i2c0 i2c1 spi0"
+overlays="spi0 pwm_cd pwm_ef"
 
 [overlay_custom]
 overlays="i2c0 i2c1"
